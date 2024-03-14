@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/bmtask2?useSSL=false
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: false
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+  mail:
+    host: smtp.example.com
+    port: 2525
+    username: c83a625ac8581e
+    password: 52b3ea4d512119
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
